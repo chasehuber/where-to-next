@@ -1,3 +1,4 @@
+import Navigation from './Navigation';
 import Search from './Search';
 import Trips from './Trips';
 
@@ -13,6 +14,7 @@ function TripCollection ({ trips, searchText, onChangeSearch }) {
 
    return (
     <div>
+        <Navigation/>
         <Search 
             searchText={searchText}
             onChangeSearch={onChangeSearch}

@@ -1,5 +1,6 @@
 import React from "react";
-import Button from "./components/Button"
+import NavButton from "./components/NavButton"
+import Navigation from "./Navigation";
 
 import { useState } from 'react';
 
@@ -47,6 +48,7 @@ function NewTripForm ({ url, onAddTrip }) {
 
     return(
         <div>
+          <Navigation/>
           <h2>New Trip</h2>
           <form onSubmit={handleSubmit}>
           <input
