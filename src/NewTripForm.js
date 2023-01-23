@@ -1,3 +1,5 @@
+import React from "react";
+import Button from "./components/Button"
 
 import { useState } from 'react';
 
@@ -93,5 +95,4 @@ function NewTripForm ({ url, onAddTrip }) {
         </div>
     )
 }
-
 export default NewTripForm
