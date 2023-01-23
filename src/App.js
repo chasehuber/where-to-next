@@ -4,10 +4,8 @@ import Home from './Home';
 function App() {
   return (
     <main>
-      <Navigation />
       <Home />
     </main>
-
   );
 }
 
