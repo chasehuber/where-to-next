@@ -1,15 +1,14 @@
+import { NavLink } from 'react-router-dom';
 
 function Navigation () {
 
-
     return (
-     <div className="fixed top-0 left-0 h-screen w-16 m-0
-                     flex flex-col
+     <div className="textfixed top-0 
+                     flex
                      bg-gray-900 text-white shadow">
-      <button>Home</button>
-      <button>About</button>
-      <button>All Trips</button>
-      <button>Add New Trip</button>
+      <NavLink className="button" exact to="/">Home</NavLink>
+      <NavLink className="button" exact to="/trips">All Trips</NavLink>
+      <NavLink className="button" exact to="/new-trip">Add New Trip</NavLink>
      </div>
     )
 }

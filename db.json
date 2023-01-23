@@ -1,0 +1,77 @@
+{
+  "trips": [
+    {
+      "id": 1,
+      "city": "Paris",
+      "country": "France",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/640px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg",
+      "cost": "$$$",
+      "season": "Spring",
+      "attractions": {
+        "attraction1": "Eiffel Tower",
+        "attraction2": "Notre Dame",
+        "attraction3": "Versailles"
+      }
+    },
+    {
+      "id": 2,
+      "city": "London",
+      "country": "England",
+      "image": "https://www.history.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTYyNDg1MjE3MTI1Mjc5Mzk4/topic-london-gettyimages-760251843-promo.jpg",
+      "cost": "$$$",
+      "season": "Fall",
+      "attractions": {
+        "attraction1": "Big Ben",
+        "attraction2": "Buckingham Palace",
+        "attraction3": "Eye of London"
+      }
+    },
+    {
+      "id": 3,
+      "city": "New York City",
+      "country": "USA",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg/800px-View_of_Empire_State_Building_from_Rockefeller_Center_New_York_City_dllu.jpg",
+      "cost": "$$",
+      "season": "Fall",
+      "attractions": {
+        "attraction1": "Statue of Liberty",
+        "attraction2": "Museum of Modern Art",
+        "attraction3": "Times Square"
+      }
+    },
+    {
+      "id": 4,
+      "city": "Toronto",
+      "country": "Canada",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/65/Toronto_Skyline_Summer_2020.jpg",
+      "cost": "$$",
+      "season": "Summer",
+      "attractions": {
+        "attraction1": "Niagara Falls",
+        "attraction2": "CN Tower",
+        "attraction3": "Royal Ontario Museum"
+      }
+    },
+    {
+      "id": 5,
+      "city": "Mexico City",
+      "country": "Mexico",
+      "image": "https://www.travelandleisure.com/thmb/PqUvjM8pkVtVJ7PIecXMeBVKYTc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mexico-city-MEXICOCITYTG0521-a25bef718b924f12b7ea483ea872934b.jpg",
+      "cost": "$$",
+      "season": "Winter",
+      "attractions": {
+        "attraction1": "Frida Kahlo Museum",
+        "attraction2": "Guadalupe Shrine",
+        "attraction3": "Teotihuacan Pyramids"
+      }
+    },
+    {
+      "image": "https://www.thediaryofanomad.com/wp-content/w3-webp/uploads/2020/11/rome-for-3-days-in-rome-itinerary-vatican-dome-view.jpgw3.webp",
+      "city": "Rome",
+      "country": "Italy",
+      "cost": "$$",
+      "season": "Winter",
+      "id": 6
+    }
+  ]
+}
