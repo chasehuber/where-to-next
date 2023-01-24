@@ -6,9 +6,8 @@ function Search ({ searchText, onChangeSearch }) {
     }
    
     return(
-        <div>
-            <label htmlFor="search">Search Trips:</label>
-            <input 
+        <div>Search Trips:
+            <input
                 type="text" 
                 id="search" 
                 placeholder=" Search by city name..."
