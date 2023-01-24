@@ -1,3 +1,5 @@
+import React from "react";
+import Button from "./components/Button"
 
 import { useState } from 'react';
 import { useHistory } from 'react-router-dom';
@@ -134,5 +136,4 @@ function NewTripForm ({ url, onAddTrip }) {
         </div>
     )
 }
-
 export default NewTripForm
