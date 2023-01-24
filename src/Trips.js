@@ -3,7 +3,7 @@ function Trips ({ trip }) {
     const { image,city, country, cost, season, attractions } = trip
     
     return(
-          <div className="border-2 border-black max-w-[304px] font-mono p-6 m-2">
+          <div className="border-2 border-black min-w-[304px] max-w-[304px] font-mono p-6 mx-2 mt-1">
             <img className="relative w-96 h-52 border-black border-2" src={image} alt="" />
             <div className="mt-1 text-white">
               <h3 className="bg-black mb-1 p-1">City: {city}</h3>

@@ -19,7 +19,7 @@ function TripCollection ({ trips, searchText, onChangeSearch }) {
             searchText={searchText}
             onChangeSearch={onChangeSearch}
         />
-        <div className="flex">{displayTrips}</div>
+        <div className="flex flex-wrap justify-items-start">{displayTrips}</div>
     </div>
     )
 }
