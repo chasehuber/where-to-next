@@ -11,8 +11,8 @@ function Trips ({ trip }) {
               <p className="bg-black mb-1 p-1">Cost: {cost}</p>
               <p className="bg-black mb-1 p-1">Season: {season}</p>
               <h4 className="bg-black mb-1 p-1">Attractions:</h4>
-              <button className="border-2 border-black text-black p-2 w-28 float-left mt-1 hover:bg-gray-300">Edit</button>
-              <button className="border-2 border-black text-black p-2 w-28 float-right mt-1 hover:bg-gray-300">Archive</button>
+              <button className="border-2 border-black text-black p-2 w-28 float-left mt-1 hover:bg-black hover:text-white">Edit</button>
+              <button className="border-2 border-black text-black p-2 w-28 float-right mt-1 hover:bg-red-500 hover:text-white">Archive</button>
             </div>
           </div>
       )
