@@ -1,3 +1,5 @@
+import Navigation from './Navigation';
+import Search from './Search';
 import Trips from './Trips';
 import Search from './Search';
 
@@ -15,11 +17,12 @@ function TripCollection ({ trips, url, onTripDelete, searchText, onChangeSearch 
 
    return (
     <div>
+        <Navigation/>
         <Search 
             searchText={searchText}
             onChangeSearch={onChangeSearch}
           />
-        <ul className='card'>{displayTrips}</ul>
+        <div className="flex flex-wrap justify-items-start">{displayTrips}</div>
     </div>
     )
 }

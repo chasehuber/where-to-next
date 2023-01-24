@@ -1,4 +1,3 @@
-
 function Search ({ searchText, onChangeSearch }) {
 
     const handleSearch = (e) => {
@@ -8,6 +7,9 @@ function Search ({ searchText, onChangeSearch }) {
     return(
         <div>Search Trips:
             <input
+        <div className="border-2 border-black m-2 mt-3 font-mono p-2">
+            <label htmlFor="search">Search Trips:</label>
+            <input 
                 type="text" 
                 id="search" 
                 placeholder=" Search by city name..."
