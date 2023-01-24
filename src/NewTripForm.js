@@ -128,7 +128,7 @@ function NewTripForm({ url, onAddTrip }) {
                   placeholder="Add attraction"
                   value={formData.attraction1}
                   onChange={handleChange}
-                  className="flex mb-1 border-2 border-black w-80 p-1"
+                  className="flex mb-1 border-2 border-black w-full p-1"
                 />
 
                 <input
@@ -137,7 +137,7 @@ function NewTripForm({ url, onAddTrip }) {
                   placeholder="Add attraction"
                   value={formData.attraction2}
                   onChange={handleChange}
-                  className="flex mb-1 border-2 border-black w-80 p-1"
+                  className="flex mb-1 border-2 border-black w-full p-1"
                 />
 
                 <input
@@ -146,7 +146,7 @@ function NewTripForm({ url, onAddTrip }) {
                   placeholder="Add attraction"
                   value={formData.attraction3}
                   onChange={handleChange}
-                  className="flex mb-1 border-2 border-black w-80 p-1"
+                  className="flex mb-1 border-2 border-black w-full p-1"
                 />
               </div>
             </div>
