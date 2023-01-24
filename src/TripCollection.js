@@ -19,7 +19,7 @@ function TripCollection ({ trips, searchText, onChangeSearch }) {
             searchText={searchText}
             onChangeSearch={onChangeSearch}
         />
-        <ul className="cards">{displayTrips}</ul>
+        <div className="flex">{displayTrips}</div>
     </div>
     )
 }

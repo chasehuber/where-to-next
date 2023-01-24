@@ -6,7 +6,7 @@ function Search ({ searchText, onChangeSearch }) {
     }
    
     return(
-        <div>
+        <div className="border-2 border-black m-2 mt-3 font-mono p-2">
             <label htmlFor="search">Search Trips:</label>
             <input 
                 type="text" 
