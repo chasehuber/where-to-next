@@ -2,7 +2,6 @@ import Navigation from './Navigation';
 import Home from './Home';
 import TripCollection from './TripCollection';
 import NewTripForm from './NewTripForm';
-import Search from './Search';
 import TripEditForm from './TripEditForm';
 import { Switch, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -28,6 +27,23 @@ function App() {
     setTrips([addTrip, ...trips])
   }
 
+  const archiveTrip = (tripToDelete) => {
+    const updatedTripList = trips.filter(trip => (
+      trip.id !== tripToDelete.id))
+       setTrips(updatedTripList)
+  }
+
+  const editTrip = (editedTrip) => {
+    const updatedTrips = trips.map((origTrip) => {
+      if (origTrip.id === editedTrip.id) {
+        return editedTrip;
+      } else {
+        return origTrip;
+      }
+    });
+      setTrips(updatedTrips)
+  }
+
   return (
     <div>
       <Switch>
@@ -36,9 +52,13 @@ function App() {
         </Route>
         
         <Route path="/trips/:id/edit">
-          <TripEditForm />
+          <TripEditForm 
+            url={url}
+            onUpdatedTrip={editTrip}
+          />
         </Route>
 
+        
         <Route path="/new-trip">
           <NewTripForm 
             url={url}
@@ -51,6 +71,8 @@ function App() {
             trips={tripsToDisplay}
             searchText={searchText}
             onChangeSearch={setSearchText}
+            url={url}
+            onTripDelete={archiveTrip}
           />
         </Route>
 

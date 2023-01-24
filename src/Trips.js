@@ -1,8 +1,31 @@
-function Trips ({ trip }) {
+import { Link } from 'react-router-dom';
 
-    const { image,city, country, cost, season, attractions } = trip
+function Trips ({ trip, url, onTripDelete, enterEditMode }) {
+
+    const { image, city, country, cost, season, attraction1, attraction2, attraction3, id } = trip
+
+    const handleDelete = () => {
+        fetch(`${url}/${id}`, {
+            method: 'DELETE',
+        })
+        .then(res => res.json())
+        .then(onTripDelete(trip))
+    }
+    
     
     return(
+          <div className="cards">
+            <div>
+             <ul>Attractions:
+               <li>1. {attraction1}</li>
+               <li>2. {attraction2}</li>
+               <li>3. {attraction3}</li>
+             </ul>
+            </div>
+            <div>
+              <Link to={`/trips/${id}/edit`}>
+                <button className="border-2 border-black text-black p-2 w-28 float-left mt-1 hover:bg-black hover:text-white">Edit</button>
+              </Link>
           <div className="border-2 border-black min-w-[304px] max-w-[304px] font-mono p-6 mx-2 mt-1">
             <img className="relative w-96 h-52 border-black border-2" src={image} alt="" />
             <div className="mt-1 text-white">
@@ -11,8 +34,7 @@ function Trips ({ trip }) {
               <p className="bg-black mb-1 p-1">Cost: {cost}</p>
               <p className="bg-black mb-1 p-1">Season: {season}</p>
               <h4 className="bg-black mb-1 p-1">Attractions:</h4>
-              <button className="border-2 border-black text-black p-2 w-28 float-left mt-1 hover:bg-black hover:text-white">Edit</button>
-              <button className="border-2 border-black text-black p-2 w-28 float-right mt-1 hover:bg-red-500 hover:text-white">Archive</button>
+              <button onClick={handleDelete} className="border-2 border-black text-black p-2 w-28 float-right mt-1 hover:bg-red-500 hover:text-white">Archive</button>
             </div>
           </div>
       )
