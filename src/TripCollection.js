@@ -1,7 +1,6 @@
 import Navigation from './Navigation';
 import Search from './Search';
 import Trips from './Trips';
-import Search from './Search';
 
 
 function TripCollection ({ trips, url, onTripDelete, searchText, onChangeSearch }) {
