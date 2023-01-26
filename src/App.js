@@ -1,4 +1,3 @@
-import Navigation from './Navigation';
 import Home from './Home';
 import TripCollection from './TripCollection';
 import NewTripForm from './NewTripForm';
@@ -20,10 +19,14 @@ function App() {
     .then(res => res.json())
     .then(data => setTrips(data))
   }, [])
+  
+  console.log(trips)
 
   const tripsToDisplay = trips.filter(trip => (
     trip.city.toLowerCase().includes(searchText.toLowerCase())
   ))
+
+
 
   const addNewTrip = (addTrip) => {
     setTrips([addTrip, ...trips])

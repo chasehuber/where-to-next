@@ -14,6 +14,7 @@ function TripCollection ({ trips, url, onTripDelete, searchText, onChangeSearch 
     />
    ))
 
+ 
    return (
     <div>
         <Navigation/>
@@ -21,7 +22,9 @@ function TripCollection ({ trips, url, onTripDelete, searchText, onChangeSearch 
             searchText={searchText}
             onChangeSearch={onChangeSearch}
           />
-        <div className="flex flex-wrap justify-items-start">{displayTrips}</div>
+        <div className="flex flex-wrap justify-items-start">
+          {displayTrips}
+        </div>
     </div>
     )
 }

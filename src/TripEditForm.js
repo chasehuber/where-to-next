@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useHistory } from 'react-router-dom';
-import Navigation from './Navigation';
-
+import Navigation from "./Navigation";
 
 function TripEditForm ({ url, onUpdatedTrip }) {
 
@@ -25,6 +24,8 @@ function TripEditForm ({ url, onUpdatedTrip }) {
         .then(res => res.json())
         .then(trips => setFormData(trips));
     }, []);
+
+    console.log(id)
 
     const handleChange = (e) => {
         const { name, value } = e.target;
