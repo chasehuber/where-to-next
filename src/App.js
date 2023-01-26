@@ -5,6 +5,7 @@ import NewTripForm from './NewTripForm';
 import TripEditForm from './TripEditForm';
 import { Switch, Route } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import DarkModeButton from './components/DarkModeButton';
 
 const url = 'http://localhost:3000/trips'
 
@@ -12,6 +13,7 @@ function App() {
 
   const [ trips, setTrips ] = useState([])
   const [ searchText, setSearchText ] = useState("")
+  const [ darkMode, setDarkMode ] = useState(false);
 
   useEffect(() => {
     fetch(url)
@@ -44,8 +46,13 @@ function App() {
       setTrips(updatedTrips)
   }
 
+  const handleDarkMode = () => {
+    setDarkMode(!darkMode);
+  }
+
   return (
-    <div>
+    <div className={darkMode ? "dark" : "light"}>
+      <DarkModeButton darkMode={darkMode} handleDarkMode={handleDarkMode}/>
       <Switch>
         <Route exact path="/">
           <Home />
