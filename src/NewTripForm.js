@@ -1,5 +1,4 @@
 import React from "react";
-import NavButton from "./components/NavButton"
 import Navigation from "./Navigation";
 
 import { useState } from 'react';
