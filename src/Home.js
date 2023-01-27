@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 function Home () {
 
     return (
-     <div className="dark:bg-gray-900">
+     <div className="dark:bg-gray-900 h-full">
       <Navigation/>
       <div>
 

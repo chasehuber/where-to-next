@@ -54,7 +54,7 @@ function App() {
   }
 
   return (
-    <div className={darkMode ? "dark" : "light"}>
+    <div className={darkMode ? "dark h-full" : "light"}>
       <DarkModeButton darkMode={darkMode} handleDarkMode={handleDarkMode}/>
       <Switch>
         <Route exact path="/">

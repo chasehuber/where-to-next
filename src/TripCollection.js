@@ -16,7 +16,7 @@ function TripCollection ({ trips, url, onTripDelete, searchText, onChangeSearch 
 
  
    return (
-    <div>
+    <div className="h-full dark:bg-gray-900">
         <Navigation/>
         <Search 
             searchText={searchText}

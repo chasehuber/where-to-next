@@ -56,61 +56,61 @@ function NewTripForm({ url, onAddTrip }) {
   }
 
   return (
-    <div>
+    <div className="dark:bg-gray-900 h-full">
       <Navigation />
-      <div className="font-mono border-2 border-black max-w-max mx-auto mt-2">
-        <div className="w-96 bg-black">
+      <div className="font-mono border-2 border-black max-w-max mx-auto mt-2 dark:border-slate-600">
+        <div className="w-96 bg-black dark:bg-slate-600">
             <h2 className="text-2xl text-white text-center p-6">Add New Trip</h2>
         </div>
         <div className="px-6 pb-6">
           <form onSubmit={handleSubmit}>
-            <div className="my-2 border-2 border-black">
-              <label className="bg-black text-white p-1">Image:</label>
+            <div className="my-2 border-2 border-black dark:border-slate-600">
+              <label className="bg-black text-white p-1 dark:bg-slate-600">Image:</label>
               <input
                 type="text"
                 name="image"
                 placeholder="City image url"
                 value={formData.image}
                 onChange={handleChange}
-                className="mx-1"
+                className="mx-1 dark:bg-gray-900 dark:text-gray-400"
               />
             </div>
-            <div className="my-2 border-2 border-black">
-              <label className="bg-black text-white p-1">City:</label>
+            <div className="my-2 border-2 border-black dark:border-slate-600">
+              <label className="bg-black text-white p-1 dark:bg-slate-600">City:</label>
               <input
                 type="text"
                 name="city"
                 placeholder="City name"
                 value={formData.city}
                 onChange={handleChange}
-                className="mx-1"
+                className="mx-1 dark:bg-gray-900 dark:text-gray-400"
               />
             </div>
-            <div className="my-2 border-2 border-black">
-              <label className="bg-black text-white p-1">Country:</label>
+            <div className="my-2 border-2 border-black dark:border-slate-600">
+              <label className="bg-black text-white p-1 dark:bg-slate-600">Country:</label>
               <input
                 type="text"
                 name="country"
                 placeholder="Country name"
                 value={formData.country}
                 onChange={handleChange}
-                className="mx-1"
+                className="mx-1 dark:bg-gray-900 dark:text-gray-400"
               />
             </div>
-            <div className="my-2 border-2 border-black">
-              <label className="bg-black text-white p-1">Estimated Cost:</label>
+            <div className="my-2 border-2 border-black dark:border-slate-600">
+              <label className="bg-black text-white p-1 dark:bg-slate-600">Estimated Cost:</label>
               <select
-                name="cost" value={formData.cost} onChange={handleChange} >
+                name="cost" value={formData.cost} onChange={handleChange} className="dark:bg-gray-900 dark:text-gray-400" >
                 <option value="">Select Cost</option>
                 <option value="$">$</option>
                 <option value="$$">$$</option>
                 <option value="$$$">$$$</option>
               </select>
             </div>
-            <div className="my-2 border-2 border-black">
-              <label className="bg-black text-white p-1">When to Visit:</label>
+            <div className="my-2 border-2 border-black dark:border-slate-600">
+              <label className="bg-black text-white p-1 dark:bg-slate-600">When to Visit:</label>
               <select
-                name="season" value={formData.season} onChange={handleChange} >
+                name="season" value={formData.season} onChange={handleChange} className="dark:bg-gray-900 dark:text-gray-400" >
                 <option value="">Select Season</option>
                 <option value="Spring">Spring</option>
                 <option value="Summer">Summer</option>
@@ -119,7 +119,7 @@ function NewTripForm({ url, onAddTrip }) {
               </select>
             </div>
             <div className="my-2">
-              <label className="inline-flex bg-black text-white p-1">Attractions:</label>
+              <label className="inline-flex bg-black text-white p-1 dark:bg-slate-600">Attractions:</label>
               <div className="relative mt-1">
                 <input
                   type="text"
@@ -127,7 +127,7 @@ function NewTripForm({ url, onAddTrip }) {
                   placeholder="Add attraction"
                   value={formData.attraction1}
                   onChange={handleChange}
-                  className="flex mb-1 border-2 border-black w-full p-1"
+                  className="flex mb-1 border-2 border-black w-full p-1 dark:border-slate-600 dark:bg-gray-900"
                 />
 
                 <input
@@ -136,7 +136,7 @@ function NewTripForm({ url, onAddTrip }) {
                   placeholder="Add attraction"
                   value={formData.attraction2}
                   onChange={handleChange}
-                  className="flex mb-1 border-2 border-black w-full p-1"
+                  className="flex mb-1 border-2 border-black w-full p-1 dark:border-slate-600 dark:bg-gray-900"
                 />
 
                 <input
@@ -145,11 +145,11 @@ function NewTripForm({ url, onAddTrip }) {
                   placeholder="Add attraction"
                   value={formData.attraction3}
                   onChange={handleChange}
-                  className="flex mb-1 border-2 border-black w-full p-1"
+                  className="flex mb-1 border-2 border-black w-full p-1 dark:border-slate-600 dark:bg-gray-900"
                 />
               </div>
             </div>
-            <div className="border-2 border-black p-2 w-max mx-auto hover:bg-green-500 hover:text-white">
+            <div className="border-2 border-black p-2 w-max mx-auto hover:bg-green-500 hover:text-white dark:border-slate-600 dark:text-white dark:hover:text-black">
               <button>Add New Trip</button>
             </div>
           </form>
